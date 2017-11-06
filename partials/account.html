@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="col-md-6">
+        <div class="row pr-50 pt-50">
+            <div class="" ng-controller="AccountCtrl">
+                <div id="retrieve-form" class="collapse in">
+                    <h2>Retrieve Your Account</h2>
+                    <form novalidate name='retrieveForm'>
+                        <label>Email:</label>
+                        <input type="email" ng-model="user1.email" name="emailC">
+                        <span ng-show="retrieveForm.emailC.$error.email">Not a valid e-mail address</span>
+                        <div class="create-message alert" ng-bind="guMessage">
+                        </div>
+                        <button class="btn" ng-click="getUser(user1)">SUBMIT</button>
+                    </form>
+                    <p>Don't have an account?
+                        <a href="" data-toggle="collapse" id="createAct" data-target="#create-form, #retrieve-form">Create New Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row pr-50">
+            <div class="" ng-controller="AccountCtrl">
+                <div id="create-form" class="collapse">
+                    <h2>Create a New Account</h2>
+                    <form novalidate name='createForm'>
+                        <label>Name: </label>
+                        <input type="text" ng-model="user2.name">
+                        <br>
+                        <label>Address:</label>
+                        <input type="text" ng-model="user2.address">
+                        <br>
+                        <label>City:</label>
+                        <input type="text" ng-model="user2.city">
+                        <br>
+                        <label>State:</label>
+                        <input type="text" ng-model="user2.state">
+                        <br>
+                        <label>ZIP:</label>
+                        <input type="text" ng-model="user2.zip">
+                        <br>
+                        <label>Country:</label>
+                        <input type="text" ng-model="user2.country">
+                        <br>
+                        <label>Email:</label>
+                        <input type="email" ng-model="user2.email" name="emailD">
+                        <span ng-show="createForm.emailD.$error.email">Not a valid e-mail address</span>
+                        <button class="btn" ng-click="submit(user2)">SUBMIT</button>
+                    </form>
+                    <div class="create-message alert" ng-bind="crMessage">
+                    </div>
+                    <p>Already have an account?
+                        <a href="" data-toggle="collapse" id="retrieveAct" data-target="#retrieve-form, #create-form">Retrieve Existing Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row pt-50 pl-50">
+            <div class="" ng-controller="AccountCtrl">
+                <div id="account-info" class="collapse in">
+                    <h2>Your Account</h2>
+                    <form novalidate name='createForm'>
+                        <label>Name:</label>
+                        <input disabled type="text" ng-model="name">
+                        <br>
+                        <label>Address:</label>
+                        <input disabled type="text" ng-model="address">
+                        <br>
+                        <label>City:</label>
+                        <input disabled type="text" ng-model="city">
+                        <br>
+                        <label>State:</label>
+                        <input disabled type="text" ng-model="state">
+                        <br>
+                        <label>ZIP:</label>
+                        <input disabled type="text" ng-model="zip">
+                        <br>
+                        <label>Country:</label>
+                        <input disabled type="text" ng-model="country">
+                        <br>
+                        <label>Email:</label>
+                        <input disabled type="email" ng-model="email" name="emailD">
+                        <span ng-show="createForm.emailD.$error.email">Not a valid e-mail address</span>
+                        <br>
+                        <br><div class="create-message alert" ng-bind="uuMessage">
+                        </div>
+                        <button class="btn" id="editBtn">EDIT</button>
+                        <button class="btn" id="updateBtn" ng-click="update(user)">UPDATE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
