@@ -35,6 +35,4 @@ POST /orders
 POST /addContact
 POST /editContact
 
-Architecture: 
-Angular Routing - Single Page Application 
 

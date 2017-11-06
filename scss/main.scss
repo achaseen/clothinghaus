@@ -113,6 +113,7 @@ form {
     font-weight: bold;
 }
 
+
 /* Top Nav */
 
 .navbar-inverse {
@@ -135,7 +136,10 @@ form {
                 color: rgba(255, 255, 255, 0.5);
             }
             &.active {
-                a, a:visited, a:active, a:focus {
+                a,
+                a:visited,
+                a:active,
+                a:focus {
                     background-color: $color-dgrey;
                     color: #fff;
                 }
@@ -146,12 +150,14 @@ form {
 
 
 
+
 /* Page Sections */
 
 .section-colored {
     padding: 50px 0;
     background-color: $color-lgrey;
 }
+
 
 
 
@@ -172,8 +178,6 @@ form {
     }
 }
 
-
-
 /* Product */
 
 .product {
@@ -189,7 +193,12 @@ form {
     }
 }
 
-.success-order, .error-order {
+.product-desc {
+    font-size: 16px;
+}
+
+.success-order,
+.error-order {
     display: none;
 }
 

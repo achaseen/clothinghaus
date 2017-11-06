@@ -5,11 +5,12 @@
         </div>
         <div class="col-md-6">
             <h2>{{description}}</h2>
-            <p class="product-count">There are {{count}} left!</p>
-            <p>Size: {{size}}</p>
-            <p>Product Code: {{productCode}}</p>
+            <h4 class="product-count">There are {{count}} left!</h4>
+            <p class="product-desc">{{addlDesc}}</p>
+            <p>Size available: {{size}}</p>
             <p>Original MSRP: {{msrp | currency}}</p>
             <p>Country of Origin: {{countryOfOrigin}}</p>
+            <p>Product Code: {{productCode}}</p>
         </div>
         <div class="col-md-6" ng-controller="ReserveCtrl">
             <button type="button" class="btn btn-info" data-toggle="collapse" id="reserveNow" data-target="#reserve-form">Reserve Now</button>

@@ -21,7 +21,6 @@ app.controller('NavCtrl', function($scope, $route) {
 app.controller('ProductCtrl', function($scope, productService) {
 
     $scope.init = function(object) {
-        console.log('obj', object);
         $scope.count = object.item.count;
         $scope.description = object.item.description;
         $scope.size = object.item.size;
@@ -29,6 +28,7 @@ app.controller('ProductCtrl', function($scope, productService) {
         $scope.imgUrl = object.dbData[0].imgUrl;
         $scope.msrp = object.dbData[0].msrp;
         $scope.countryOfOrigin = object.dbData[0].countryOfOrigin;
+        $scope.addlDesc = object.dbData[0].addlDesc;
     }
     $scope.addProduct = function(product) {
         productService.addProduct(product);
