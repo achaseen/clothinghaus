@@ -5,7 +5,7 @@
                 <form novalidate name='reserveForm'>
                     <label>Order ID:</label>
                     <input type="text" ng-model="user.orderId">
-                    <br> 
+                    <br>
                     <label>Email:</label>
                     <input type="email" ng-model="user.email" name="emailA">
                     <span ng-show="reserveForm.emailA.$error.email">Not a valid e-mail address</span>
@@ -14,12 +14,9 @@
                 </form>
             </div>
             <div class="track-order">
-               <h4>You Order Status</h4>
-               Order ID: {{trackOrder.orderId}}
-               <br>
-               Size: {{trackOrder.size}}
-               <br>
-               Status: {{trackOrder.status}}
+                <h4>You Order Status</h4> Order ID: {{trackOrder.orderId}}
+                <br> Size: {{trackOrder.size}}
+                <br> Status: {{trackOrder.status}}
             </div>
         </div>
     </div>

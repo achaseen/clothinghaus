@@ -1,0 +1,40 @@
+Tools Used:
+Build tools: Gulp, Browsersync
+Database: MySQL
+Framework: Angular.js, Bootstrap
+Styling: SCSS
+Package manager: NPM, Bower
+Version control: Git
+CRM: Salesforce
+API: Anypoint Studio
+
+Requirements
+1.	Demonstrate connectivity to SaaS applications (Salesforce) 
+	- Create a user 
+	- Retrieve an existing user
+	- Update user information
+	- If a user is created or retrieved, prepopulate user information when reserving a t-shirt
+
+2.	Build an Angular JS UI for the API
+	- View all t-shirts in a list view (homepage)
+	- Select a t-shirt to view more details (product detail page)
+	- Reserve a t-shirt from the product details page 
+	- Create, edit and update user accounts
+	- Track an order
+
+3.	Enrich the information provided by this API by merging the results produced by the SOAP service with some data fetched from the products database. Pick any database you like.
+	- Local MySQL database
+	- Database contains image URL, MSRP and country of origin
+	- Merged with inventory information coming from SOAP/Rest proxy and provided to Product Controller
+
+Endpoints:
+GET /inventory
+GET /orders/{orderId}/status
+GET /getContact
+POST /orders
+POST /addContact
+POST /editContact
+
+Architecture: 
+Angular Routing - Single Page Application 
+

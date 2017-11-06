@@ -1,5 +1,4 @@
 <div class="section-image"> </div>
-<!-- /.section -->
 <div class="section-colored text-center">
     <div class="container">
         <div class="row">
@@ -11,7 +10,6 @@
         </div>
     </div>
 </div>
-
 <div class="section" ng-controller="ProductListCtrl">
     <div class="container">
         <div class="row">
@@ -19,14 +17,12 @@
                 <h2>Limited Edition T-Shirts</h2>
                 <hr>
             </div>
-
             <div class="col-lg-4 col-md-4 col-sm-6" ng-repeat="product in products" ng-controller="ProductCtrl" ng-init="init(product)" ng-click="addProduct(product)">
                 <a href="#/reserve">
                     <img class="img-responsive img-home-portfolio" src="{{imgUrl}}" >
                     <div class='product-description'>{{description}}</div>
                 </a>
             </div>
-           
         </div>
     </div>
 </div>
